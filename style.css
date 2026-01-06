@@ -1,175 +1,196 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* المتغيرات */
 :root {
-    font-size: 16px;
-    --primary-color: #A0522D;
-    --secondary-color: #F4A460;
-    --accent-color: #DAA520;
+  font-size: 16px;
+  --primary-color: #a0522d;
+  --secondary-color: #f4a460;
+  --accent-color: #daa520;
 
-    --text-dark: #333;
-    --bg-light: #FFF8DC;
-    --max-width: 1000px;
+  --text-dark: #333;
+  --bg-light: #fff8dc;
+  --max-width: 1000px;
 }
 
 body {
-    font-family: Tahoma, sans-serif;
-    color: var(--text-dark);
-    background-color: var(--bg-light);
-    line-height: 1.8;
-    letter-spacing: 0.3px;
-    direction: rtl;
+  font-family: Tahoma, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  direction: rtl;
 }
 
 /* الهيدر */
 .main-header {
-    background-color: var(--primary-color);
-    padding: 1.5rem 0;
+  background-color: var(--primary-color);
+  padding: 1.5rem 0;
 }
 
 .navbar {
-    max-width: var(--max-width);
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .logo a {
-    font-size: 2rem;
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: bold;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* المحتوى */
 main {
-    max-width: var(--max-width);
-    margin: 3rem auto;
-    padding: 2.5rem;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: var(--max-width);
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2.6rem;
-    margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
-    color: var(--primary-color);
-    border-bottom: 3px solid var(--secondary-color);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
 
 p {
-    font-size: 1.05rem;
-    margin-bottom: 1rem;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
 }
 
 /* Hero */
 .hero-banner {
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 5rem 1rem;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* البطاقات */
 .card {
-    background-color: var(--bg-light);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-    text-align: center;
+  background-color: var(--bg-light);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
 /* المنيو */
 .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
 }
 
 .menu-item {
-    background-color: var(--bg-light);
-    padding: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s;
+  background-color: var(--bg-light);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
 }
 
 .menu-item:hover {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
 .item-price {
-    color: var(--secondary-color);
-    font-size: 1.4rem;
-    font-weight: bold;
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 /* الفورم */
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    border: 2px solid var(--secondary-color);
-    border-radius: 6px;
-    padding: 10px;
+  width: 100%;
+  border: 2px solid var(--secondary-color);
+  border-radius: 6px;
+  padding: 10px;
 }
 
 /* الأزرار */
 .button-cta {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 0.8rem 2rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .button-cta:hover {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
+.hero-banner {
+  background-image: url("https://via.placeholder.com/1000x400?text=Delicious+Food");
+}
 
 footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 3rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+.menu-item {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
 }

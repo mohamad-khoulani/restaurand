@@ -1,47 +1,88 @@
-<header class="main-header">
-    <nav class="navbar">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
         <div class="logo"><a href="index.html">ركن النكهات</a></div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">الرئيسية</a></li>
-            <li><a href="menu.html">قائمة الطعام</a></li>
-            <li><a href="offers.html">العروض</a></li>
-            <li><a href="contact.html">اتصل بنا</a></li>
+          <li><a href="index.html" class="active">الرئيسية</a></li>
+          <li><a href="menu.html">قائمة الطعام</a></li>
+          <li><a href="offers.html">العروض</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
         </ul>
-        <link rel="stylesheet" href="style.css" />
-    </nav>
-</header>
-<main>
-    <h1>تواصل معنا وحدد موقعنا</h1>
-    <section style="display: flex; gap: 40px;">
-        <div style="flex: 1;">
-            <h2>نموذج الاتصال</h2>
-            <form action="#" method="POST" class="contact-form" style="max-width: 400px; text-align: right;">
-                <div style="margin-bottom: 15px;">
-                    <label for="name" style="display: block;">الاسم:</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div style="margin-bottom: 15px;">
-                    <label for="email" style="display: block;">البريد الإلكتروني:</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div style="margin-bottom: 20px;">
-                    <label for="message" style="display: block;">رسالتك:</label>
-                    <textarea id="message" required style="min-height: 100px;"></textarea>
-                </div>
-                <button type="submit" class="button-cta">إرسال</button>
-            </form>
-        </div>
-        <div style="flex: 1;">
-            <h2>معلومات الموقع</h2>
-            <p><strong>العنوان:</strong> شارع الطعام، مبنى رقم 15، الطابق الأول.</p>
-            <p><strong>الهاتف:</strong> 00962XXXXXXXX</p>
-            <p><strong>ساعات العمل:</strong> يوميًا من 10 صباحًا حتى 11 مساءً.</p>
-            <div style="margin-top: 25px;">
-                <h2>تابعنا على</h2>
-                <a href="#" style="color: var(--accent-color); font-size: 1.2rem; margin-left: 15px;">فيسبوك</a>
-                <a href="#" style="color: var(--accent-color); font-size: 1.2rem; margin-left: 15px;">انستجرام</a>
-                <a href="#" style="color: var(--accent-color); font-size: 1.2rem;">تويتر</a>
+      </nav>
+    </header>
+    <main>
+      <h1>تواصل معنا وحدد موقعنا</h1>
+      <section style="display: flex; gap: 40px">
+        <div style="flex: 1">
+          <h2>نموذج الاتصال</h2>
+          <form
+            action="#"
+            method="POST"
+            class="contact-form"
+            style="max-width: 400px; text-align: right"
+          >
+            <div style="margin-bottom: 15px">
+              <label for="name" style="display: block">الاسم:</label>
+              <input type="text" id="name" required />
             </div>
+            <div style="margin-bottom: 15px">
+              <label for="email" style="display: block"
+                >البريد الإلكتروني:</label
+              >
+              <input type="email" id="email" required />
+            </div>
+            <div style="margin-bottom: 20px">
+              <label for="message" style="display: block">رسالتك:</label>
+              <textarea
+                id="message"
+                required
+                style="min-height: 100px"
+              ></textarea>
+            </div>
+            <button type="submit" class="button-cta">إرسال</button>
+          </form>
         </div>
-    </section>
-</main>
+        <div style="flex: 1">
+          <h2>معلومات الموقع</h2>
+          <p>
+            <strong>العنوان:</strong> شارع الطعام، مبنى رقم 15، الطابق الأول.
+          </p>
+          <p><strong>الهاتف:</strong> 00962XXXXXXXX</p>
+          <p><strong>ساعات العمل:</strong> يوميًا من 10 صباحًا حتى 11 مساءً.</p>
+          <div style="margin-top: 25px">
+            <h2>تابعنا على</h2>
+            <a
+              href="#"
+              style="
+                color: var(--accent-color);
+                font-size: 1.2rem;
+                margin-left: 15px;
+              "
+              >فيسبوك</a
+            >
+            <a
+              href="#"
+              style="
+                color: var(--accent-color);
+                font-size: 1.2rem;
+                margin-left: 15px;
+              "
+              >انستجرام</a
+            >
+            <a href="#" style="color: var(--accent-color); font-size: 1.2rem"
+              >تويتر</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
